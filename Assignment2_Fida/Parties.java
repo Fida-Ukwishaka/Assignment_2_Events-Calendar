@@ -39,13 +39,12 @@ public class Parties extends AshesiEvents {
 
     // Implementing the eventSummary method from EventDetails interface
     @Override
-    public String eventSummary() {
-        return super.eventSummary() + 
-               "\nParty Theme: " + partyTheme + 
-               "\nLocation: " + partyLocation + 
-               "\nPerfomance By: " + specialPerformer + 
-               "\nDJ: " + dJName +
-               "\nDress Code: " + dressCode;
+    public void specificData() {
+        System.out.println("Party Theme: " + partyTheme);
+        System.out.println("Location: " + partyLocation);
+        System.out.println("Perfomance By: " + specialPerformer);
+        System.out.println("DJ: " + dJName );
+        System.out.println("Dress Code: " + dressCode);
     }
     
 }

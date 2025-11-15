@@ -111,7 +111,7 @@ public class EventDriver {
         // Displaying events using a loop
         System.out.println("===== Ashesi Events Summary =====");
         for (AshesiEvents event : events) {
-            System.out.println(event.eventSummary());
+            event.eventSummary();
             System.out.println();
         }
         

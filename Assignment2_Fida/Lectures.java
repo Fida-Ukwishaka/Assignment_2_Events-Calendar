@@ -35,12 +35,11 @@ public class Lectures extends AshesiEvents {
 
     // Implementing the eventSummary method from EventDetails interface
     @Override
-    public String eventSummary() {
-        return super.eventSummary() + 
-               "\nLecturer Name: " + LecturerName + 
-               "\nFaculty Intern: " + FacultyIntern + 
-               "\nCourse: " + Course + 
-               "\nTopic: " + Topic;
+    public void specificData(){
+        System.err.println("Lecturer Name: " + LecturerName);
+        System.err.println("Faculty Intern: " + FacultyIntern);
+        System.err.println("Course: " + Course);
+        System.err.println("Topic: " + Topic);
     }
     
 }

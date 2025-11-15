@@ -35,12 +35,11 @@ public class Sports extends AshesiEvents {
 
     // Implementing the eventSummary method from EventDetails interface
     @Override
-    public String eventSummary() {
-        return super.eventSummary() + 
-               "\nSport Type: " + sportType + 
-               "\nHosted by: " + hostAssociation + 
-               "\nSeason " + gameSeason +
-               "\nTeams Involved: " + teams;
+    public void specificData() {
+        System.out.println("Sport Type: " + sportType);
+        System.out.println("Hosted by: " + hostAssociation);
+        System.out.println("Season " + gameSeason);
+        System.out.println("Teams Involved: " + teams);
     }
     
 }

@@ -5,7 +5,7 @@ import java.time.LocalTime;
 public abstract class AshesiEvents {
 
     private String eventName;
-    private String eventType;
+    private String eventType; 
     private String eventLocation;
     private LocalDate eventDate;
     private LocalTime eventTime;
@@ -46,16 +46,19 @@ public abstract class AshesiEvents {
         return eventorganizer;
     }
 
+    public abstract void specificData();
+
 
     // event summary method
-    public String eventSummary() {
-        return "Event Name: " + eventName + "\n" +
-               "Event Type: " + eventType + "\n" +
-               "Organizer: " + eventorganizer + "\n" +
-               "Location: " + eventLocation + "\n" +
-               "Date: " + eventDate + "\n" +
-               "Time: " + eventTime + "\n" +
-               "Duration: " + Duration + " hours";
+    public void eventSummary() {
+        System.out.println( "Event Name: " + eventName);
+        System.out.println("Event Type: " + eventType);
+        System.out.println("Organizer: " + eventorganizer);
+        System.out.println("Location: " + eventLocation);
+        System.out.println("Date: " + eventDate);
+        System.out.println("Time: " + eventTime);
+        System.out.println("Duration: " + Duration + " hours");
+        specificData();
     }
 
 }
